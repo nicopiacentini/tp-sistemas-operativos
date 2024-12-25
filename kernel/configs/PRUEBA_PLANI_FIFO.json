@@ -1,0 +1,10 @@
+{
+    "ip_memory": "localhost",
+    "port_memory": 8082,
+    "ip_cpu": "localhost",
+    "port_cpu": 8081,
+    "scheduler_algorithm": "FIFO",
+    "quantum": 875,
+    "log_level": "INFO",
+    "port" : 8080
+}

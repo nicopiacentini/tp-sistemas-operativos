@@ -1,0 +1,67 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Kernel",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/kernel",
+            "args": [
+                "RECURSOS_MUTEX_PROC",
+                "32"
+            ],
+            "env": {},
+            "cwd": "${workspaceFolder}/kernel",
+            "buildFlags": "",
+            "debugAdapter": "dlv-dap"
+        },
+        {
+            "name": "Launch CPU",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/cpu",
+            "args": [],
+            "env": {},
+            "cwd": "${workspaceFolder}/cpu",
+            "buildFlags": "",
+            "debugAdapter": "dlv-dap"
+        },
+        {
+            "name": "Launch Memoria",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/memoria",
+            "args": [],
+            "env": {},
+            "cwd": "${workspaceFolder}/memoria",
+            "buildFlags": "",
+            "debugAdapter": "dlv-dap"
+        },
+        {
+            "name": "Launch Filesystem",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/filesystem",
+            "args": [],
+            "env": {},
+            "cwd": "${workspaceFolder}/filesystem",
+            "buildFlags": "",
+            "debugAdapter": "dlv-dap"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Debug Kernel, CPU, Memoria and Filesystem",
+            "configurations": [
+                "Launch Kernel",
+                "Launch CPU",
+                "Launch Memoria",
+                "Launch Filesystem"
+            ]
+        }
+    ]
+}

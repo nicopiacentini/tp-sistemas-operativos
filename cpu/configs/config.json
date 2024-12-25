@@ -1,0 +1,8 @@
+{
+    "ip_memory": "localhost",       
+	"port_memory": 8082,        
+	"ip_kernel": "localhost",         
+	"port_kernel": 8080,    
+	"log_level":  "INFO",        
+	"port":        8081      
+}

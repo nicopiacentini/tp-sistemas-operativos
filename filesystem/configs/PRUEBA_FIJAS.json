@@ -1,0 +1,10 @@
+{
+    "port": 8083,
+    "ip_memory": "localhost",
+    "port_memory": 8082,
+    "mount_dir": "mount_dir/",
+    "block_size": 16,
+    "block_count": 1024,
+    "block_access_delay": 2500,
+    "log_level": "INFO"
+}
